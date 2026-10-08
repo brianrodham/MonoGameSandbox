@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/Character.png</SourceFile>
+  <SourceTime>2026-10-07T15:04:11.5079024-06:00</SourceTime>
+  <DestFile>/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/bin/DesktopGL/Content/Character.xnb</DestFile>
+  <DestTime>2026-10-07T15:52:24.3970339-06:00</DestTime>
+  <Importer>TextureImporter</Importer>
+  <ImporterTime>2026-08-14T15:50:10-06:00</ImporterTime>
+  <Processor>TextureProcessor</Processor>
+  <ProcessorTime>2026-08-14T15:50:10-06:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
