@@ -5,8 +5,12 @@
   <Config />
   <SourceFiles>
     <File>/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/Character.png</File>
+    <File>/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/File.spritefont</File>
+    <File>/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/InteractableObject.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File>GameFont.spritefont</File>
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

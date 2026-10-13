@@ -1,2 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/Character.png","/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/bin/DesktopGL/Content/Character.xnb","TextureProcessor","Texture2DContent",141269,486485,0.38646
+"/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/Character.png","/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/bin/DesktopGL/Content/Character.xnb","TextureProcessor","Texture2DContent",141269,486485,0.050209
+"/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/File.spritefont","/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/bin/DesktopGL/Content/GameFont.xnb","FontDescriptionProcessor","SpriteFontContent",2008,21530,0.064383
+"/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/InteractableObject.jpg","/Users/brianrodham/Documents/GitHub/MonoGameSandbox/Content/bin/DesktopGL/Content/InteractableObject.xnb","TextureProcessor","Texture2DContent",4212344,81000085,0.458855

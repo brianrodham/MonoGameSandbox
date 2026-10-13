@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonoGameSandbox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4102fc3d20e5adb38700fe628780735d6e62bb69")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonoGameSandbox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonoGameSandbox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

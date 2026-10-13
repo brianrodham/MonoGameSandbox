@@ -11,7 +11,7 @@ public class Player
     private const int SPRITE_WIDTH = 70;
     private const int SPRITE_HEIGHT = 100;
     private const int SPEED = 5;
-
+    public Rectangle InteractionRange => new Rectangle(CharacterRectangle.X - 16, CharacterRectangle.Y - 16, CharacterRectangle.Width + 32, CharacterRectangle.Height + 32);
     public Rectangle CharacterRectangle { get; set; }
     public Texture2D SpriteTexture { get; set; }
 
@@ -22,7 +22,7 @@ public class Player
     }
 
 
-    public void Move(KeyboardState state)
+    public void TakeAction(KeyboardState state)
     {
         if (state.IsKeyDown(Keys.Right))
         {
@@ -40,11 +40,15 @@ public class Player
         {
             MoveDown();
         }
+        if (state.IsKeyDown(Keys.Space))
+        {
+            // Implement action for space key here
+        }
     }
 
     private void MoveRight()
     {
-        if (CharacterRectangle.Right >= 820 )
+        if (CharacterRectangle.Right >= 800 )
         {
             return;
         }
@@ -55,7 +59,7 @@ public class Player
 
     private void MoveLeft()
     {
-        if (CharacterRectangle.Left <= -20)
+        if (CharacterRectangle.Left <= 0)
         {
             return;
         }
@@ -66,7 +70,7 @@ public class Player
 
     private void MoveUp()
     {
-        if (CharacterRectangle.Top <= -20)
+        if (CharacterRectangle.Top <= 0)
         {
             return;
         }
@@ -77,7 +81,7 @@ public class Player
 
     private void MoveDown()
     {
-        if (CharacterRectangle.Bottom >= 600 - SPRITE_HEIGHT)
+        if (CharacterRectangle.Bottom >= 600 )
         {
             return;
         }

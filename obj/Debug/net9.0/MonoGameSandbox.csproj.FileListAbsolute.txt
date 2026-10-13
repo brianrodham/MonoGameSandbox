@@ -34,4 +34,8 @@
 /Users/brianrodham/Documents/GitHub/MonoGameSandbox/obj/Debug/net9.0/MonoGameSandbox.pdb
 /Users/brianrodham/Documents/GitHub/MonoGameSandbox/obj/Debug/net9.0/MonoGameSandbox.genruntimeconfig.cache
 /Users/brianrodham/Documents/GitHub/MonoGameSandbox/obj/Debug/net9.0/ref/MonoGameSandbox.dll
+/Users/brianrodham/Documents/GitHub/MonoGameSandbox/obj/Debug/net9.0/MonoGameSandbox.sourcelink.json
 /Users/brianrodham/Documents/GitHub/MonoGameSandbox/bin/Debug/net9.0/Content/Character.xnb
+/Users/brianrodham/Documents/GitHub/MonoGameSandbox/bin/Debug/net9.0/Content/File.xnb
+/Users/brianrodham/Documents/GitHub/MonoGameSandbox/bin/Debug/net9.0/Content/InteractableObject.xnb
+/Users/brianrodham/Documents/GitHub/MonoGameSandbox/bin/Debug/net9.0/Content/GameFont.xnb
