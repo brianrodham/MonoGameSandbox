@@ -10,7 +10,7 @@ namespace MonoGameSandbox;
 /// A modal text box drawn at the bottom of the screen. Text is word-wrapped,
 /// split into pages that fit the box, and revealed with a typewriter effect.
 /// </summary>
-public class DialogueBox
+public class DialogueBox : System.IDisposable
 {
     private const float CHARS_PER_SECOND = 40f;
     private const int PADDING = 16;
@@ -25,6 +25,7 @@ public class DialogueBox
 
     private string _currentPage;
     private float _charsVisible;
+    private System.Action _onClosed;
 
     public bool IsOpen => _currentPage != null;
 
@@ -40,12 +41,20 @@ public class DialogueBox
         _box = new Rectangle(MARGIN, viewport.Height - HEIGHT - MARGIN, viewport.Width - MARGIN * 2, HEIGHT);
     }
 
+    public void Dispose()
+    {
+        _pixel.Dispose();
+    }
+
     /// <summary>
     /// Queues text to display. Each string starts on a new page; long strings
     /// are automatically split across multiple pages.
     /// </summary>
-    public void Show(params string[] texts)
+    /// <param name="onClosed">Called once the last page has been dismissed.</param>
+    public void Show(string[] texts, System.Action onClosed = null)
     {
+        _onClosed += onClosed;
+
         foreach (var text in texts)
         {
             foreach (var page in Paginate(text))
@@ -101,6 +110,14 @@ public class DialogueBox
     {
         _currentPage = _pages.Count > 0 ? _pages.Dequeue() : null;
         _charsVisible = 0;
+
+        if (_currentPage == null && _onClosed != null)
+        {
+            // Clear before invoking, in case the callback opens new dialogue
+            var onClosed = _onClosed;
+            _onClosed = null;
+            onClosed();
+        }
     }
 
     /// <summary>
